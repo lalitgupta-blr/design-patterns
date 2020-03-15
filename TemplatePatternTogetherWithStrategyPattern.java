@@ -5,9 +5,9 @@ public class TemplatePatternTogetherWithStrategyPattern {
         double gains1 = moneyInvestment1.increaseMoney();
         System.out.println(" Invested Money after investment in bond for simple interest : " + gains1);
 
-        MoneyInvestment moneyInvestment2 = new InvestmentInBondForCompundInterest(200,2);
+        MoneyInvestment moneyInvestment2 = new InvestmentInBondForCompoundInterest(200,2);
         double gains2 = moneyInvestment2.increaseMoney();
-        System.out.println(" Invested Money after investment in bond for compund interest : " + gains2);
+        System.out.println(" Invested Money after investment in bond for compound interest : " + gains2);
     }
 
 }
@@ -51,11 +51,11 @@ class InvestmentInBondForSimpleInterest extends MoneyInvestment
     }
 }
 
-class InvestmentInBondForCompundInterest extends MoneyInvestment
+class InvestmentInBondForCompoundInterest extends MoneyInvestment
 {
     static double RATE_OF_INTEREST_FOR_COMPUND_BONDS=5;
 
-    public InvestmentInBondForCompundInterest (double principal, double duration){
+    public InvestmentInBondForCompoundInterest (double principal, double duration){
         super( principal,  duration);
     }
 
