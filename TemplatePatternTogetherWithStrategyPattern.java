@@ -53,7 +53,7 @@ class InvestmentInBondForSimpleInterest extends MoneyInvestment
 
 class InvestmentInBondForCompoundInterest extends MoneyInvestment
 {
-    static double RATE_OF_INTEREST_FOR_COMPUND_BONDS=5;
+    static double RATE_OF_INTEREST_FOR_COMPOUND_BONDS=5;
 
     public InvestmentInBondForCompoundInterest (double principal, double duration){
         super( principal,  duration);
@@ -63,7 +63,7 @@ class InvestmentInBondForCompoundInterest extends MoneyInvestment
     protected double calculateGains() {
         CompoundIntrestOnBondsStrategy strategy2 = new  CompoundIntrestOnBondsStrategy();
         MoneyIncreaseUsingBonds calc2 = new MoneyIncreaseUsingBonds(strategy2);
-        double interestAmount = calc2.interestAmount(this.principal, RATE_OF_INTEREST_FOR_COMPUND_BONDS, this.duration);
+        double interestAmount = calc2.interestAmount(this.principal, RATE_OF_INTEREST_FOR_COMPOUND_BONDS, this.duration);
         return interestAmount;
     }
 }
