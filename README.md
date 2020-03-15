@@ -15,6 +15,6 @@ Outcome
 -----
  For simple intrest on bonds strategy interest amount: 20.0
  
- For compund intrest on bonds strategy interest amount: 20.5
+ For compound intrest on bonds strategy interest amount: 20.5
 
 -----
